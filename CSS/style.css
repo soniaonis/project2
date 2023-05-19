@@ -1,17 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext");
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(234, 237, 239);  
+}
+
 * {
     padding: 0;
     margin: 0;
-  }
+}
+
+.header {
+    position: sticky;
+    top: 0;
+}
 
 .logo {
-    width: 90px;
-    height: 90px;
-    margin: 20px;
+    width: 100px;
+    height: 50px;
+    padding-left: 5%;
     margin-top: 20px;
 }
 
 .menu {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     text-decoration: none;
     list-style: none;
     margin-top: 20px;
@@ -24,7 +38,6 @@
 
 nav {
     display: flex;
-    font-family: 'Lucida Sans';
     font-weight: bold;
     font-size: 12px;
 }
@@ -33,10 +46,12 @@ nav ul li {
     list-style: none;
     display: flex;
     justify-content: flex-end;
+    margin-left: 5%;
     color:black;
     align-items: center;
-    margin-right: 20px;
     text-decoration: none;
+    position: sticky;
+    top: 0;
 }
 
 nav ul a {
@@ -45,69 +60,144 @@ nav ul a {
 }
 
 .download {
-    color: red;
+    color: rgb(246, 68, 68);
     font-size: 12px;
     font-weight: bold;
-    border: 2px solid red;
+    border: 2px solid rgb(246, 68, 68);
     border-radius: 15px;
     padding: 7px 10px;
-}
-
-.yellowCircle  {
-    width: 10%;
-    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .greenDiamond {
-    width: 10%;
-    height: 10%;
+    width: 1%;
+    height: 1%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between; 
+    float: left;
+}
+
+.yellowCircle {
+    width: 2%;
+    height: 2%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    float: right;
 }
 
 h1 {
-    font-family: 'Lucida Sans';
+    margin-top: 3%;
     font-size: 40px;
     text-align: center;
 }
 
 p {
-    font-family: 'Lucida Sans';
     font-size: 15px;
     text-align: center;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
+    padding: 0 30%;
+    display: flex;
+    justify-content: center;
 }
 
-.download red1 {
-    background-color: red;
-    color: white;
-    font-size: 12px;
+.redButton {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.downloadRed1 {
+    margin-top: 2%;
+    background-color: rgb(246, 68, 68);
+    color: rgb(243, 240, 240);
+    font-size: 10px;
     font-weight: bold;
     border-radius: 15px;
-    padding: 7px 10px;
+    padding: 8px 11px;
+    flex-wrap: wrap;
 }
 
-.download red2 {
-    background-color: red;
-    color: white;
-    font-size: 12px;
+.downloadRed2 {
+    margin-top: 2%;
+    background-color: rgb(246, 68, 68);
+    color: rgb(243, 240, 240);
+    font-size: 10px;
     font-weight: bold;
     border-radius: 15px;
-    padding: 7px 10px;
+    padding: 8px 11px;
+    flex-wrap: wrap;
 }
 
-.white circle {
-    width: 3em;
-    height: 3em;
+.whiteCircle {
+    width: 15%;
+    height: 15%;
     display: flex;
-    overflow-clip-margin: content-box;
+    margin-left: 2%;
 }
 
-.blue circle {
-    width: 3em;
-    height: 3em;
+.blueCircle {
+    width: 10%;
+    height: 10%;
     display: flex;
-    overflow-clip-margin: content-box;
+    margin-left: 5%;
 }
+
+.mobile {
+    display: flex;
+    justify-content: center;
+}
+
+.mobile1 {
+    width: 50%;
+    height: 50%;
+}
+
+.circleButtons {
+    margin-top: 3%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+
+.container {
+    margin-top: 10%;
+    display: flex;
+    position: relative;
+}
+
+.image1SectionDescription {
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+    float: left;
+    position: absolute;
+}
+
+.text1SectionDescription {
+    width: 50%;
+    position: absolute;
+    float: right;
+}
+
+.lightbox {
+    background-color: rgb(246, 68, 68);
+    color: rgb(243, 240, 240);
+    border-radius: 15px;
+    padding: 8px 11px;
+    font-weight: bold;
+    font-size: 10px;
+    justify-content: center;
+    display: flex;
+    float: right;
+}
+
+
