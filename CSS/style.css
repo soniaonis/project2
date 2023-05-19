@@ -148,16 +148,18 @@ p {
 .mobile {
     display: flex;
     justify-content: center;
+    margin-top: 0;
 }
 
 .mobile1 {
     width: 50%;
     height: 50%;
+    margin-top: 0;
 }
 
 .circleButtons {
     margin-top: 3%;
-    margin-left: 10%;
+    margin-left: 8%;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -170,22 +172,21 @@ p {
 
 .container {
     margin-top: 10%;
-    display: flex;
-    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 5px;
 }
 
 .image1SectionDescription {
-    width: 50%;
-    margin-left: 5%;
-    margin-right: 5%;
-    float: left;
-    position: absolute;
+    width: 80%;
+    margin-left: 10%;
+    justify-self: start; 
 }
 
 .text1SectionDescription {
-    width: 50%;
-    position: absolute;
-    float: right;
+    width: 100%;
+    font-size: calc(1em * 1.5);
+    justify-self: start;
 }
 
 .lightbox {
@@ -195,9 +196,8 @@ p {
     padding: 8px 11px;
     font-weight: bold;
     font-size: 10px;
-    justify-content: center;
-    display: flex;
-    float: right;
+    display: grid;
+    grid-template-columns: auto 1fr;
 }
 
 
